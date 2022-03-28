@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { userService } from '../../../services/UserService';
 import TeamMember from './TeamMember';
 
 
@@ -7,8 +8,7 @@ const Team = () => {
   const [team, setTeam] = useState([]);
 
   useEffect(() =>{
-    fetch('http://127.0.0.1:8000/api/manage/team')
-    .then(res =>res.json())
+    userService.getTeam().then(res =>res.json())
     .then(data => setTeam(data.data))
   },[])
     return (

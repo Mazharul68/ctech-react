@@ -31,9 +31,9 @@ const Home = () => {
                             </div> */}
                     {/* layer 3 */}
                     <div className="layer-3 wow fadeInUp" data-wow-delay="0.7s">
-                      <a href="#" className="ready-btn left-btn">Our
+                      <a href=" " className="ready-btn left-btn">Our
                         Services</a>
-                      <a href="#" className="ready-btn right-btn">Contact
+                      <a href=" " className="ready-btn right-btn">Contact
                         us</a>
                     </div>
                   </div>
@@ -52,42 +52,42 @@ const Home = () => {
                   {/* single-well end*/}
                   <div className="well-services wow fadeInUp" data-wow-delay="0.3s">
                     <div className="services-img">
-                      <a className="big-icon" href="#"><i className="flaticon-052-project-plan" /></a>
+                      <a className="big-icon" href=" "><i className="flaticon-052-project-plan" /></a>
                     </div>
                     <div className="main-wel">
                       <div className="wel-content">
                         <h4>Innovation idea</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu.
                         </p>
-                        <a href="#">Read more</a>
+                        <a href=" ">Read more</a>
                       </div>
                     </div>
                   </div>
                   {/* single-well end*/}
                   <div className="well-services wow fadeInUp" data-wow-delay="0.7s">
                     <div className="services-img">
-                      <a className="big-icon" href="#"><i className="flaticon-002-analysis" /></a>
+                      <a className="big-icon" href=" "><i className="flaticon-002-analysis" /></a>
                     </div>
                     <div className="main-wel">
                       <div className="wel-content">
                         <h4>Market research</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu.
                         </p>
-                        <a href="#">Read more</a>
+                        <a href=" ">Read more</a>
                       </div>
                     </div>
                   </div>
                   {/* single-well end*/}
                   <div className="well-services wow fadeInUp" data-wow-delay="0.5s">
                     <div className="services-img">
-                      <a className="big-icon" href="#"><i className="flaticon-060-team-work" /></a>
+                      <a className="big-icon" href=" "><i className="flaticon-060-team-work" /></a>
                     </div>
                     <div className="main-wel">
                       <div className="wel-content">
                         <h4>Creative team</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu.
                         </p>
-                        <a href="#">Read more</a>
+                        <a href=" ">Read more</a>
                       </div>
                     </div>
                   </div>
@@ -165,7 +165,7 @@ const Home = () => {
                       <div className="service-content">
                         <h4>Hospital Automation</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-                        <a className="service-btn" href="#"><i className="ti-arrow-right" /></a>
+                        <a className="service-btn" href=" "><i className="ti-arrow-right" /></a>
                       </div>
                     </div>
                   </div>
@@ -180,7 +180,7 @@ const Home = () => {
                       <div className="service-content">
                         <h4>Software development</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-                        <a className="service-btn" href="#"><i className="ti-arrow-right" /></a>
+                        <a className="service-btn" href=" "><i className="ti-arrow-right" /></a>
                       </div>
                     </div>
                   </div>
@@ -195,7 +195,7 @@ const Home = () => {
                       <div className="service-content">
                         <h4>ICT Training</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-                        <a className="service-btn" href="#"><i className="ti-arrow-right" /></a>
+                        <a className="service-btn" href=" "><i className="ti-arrow-right" /></a>
                       </div>
                     </div>
                   </div>
@@ -210,7 +210,7 @@ const Home = () => {
                       <div className="service-content">
                         <h4>Web development</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-                        <a className="service-btn" href="#"><i className="ti-arrow-right" /></a>
+                        <a className="service-btn" href=" "><i className="ti-arrow-right" /></a>
                       </div>
                     </div>
                   </div>
@@ -225,7 +225,7 @@ const Home = () => {
                       <div className="service-content">
                         <h4>Hardware sales and services</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-                        <a className="service-btn" href="#"><i className="ti-arrow-right" /></a>
+                        <a className="service-btn" href=" "><i className="ti-arrow-right" /></a>
                       </div>
                     </div>
                   </div>
@@ -240,7 +240,7 @@ const Home = () => {
                       <div className="service-content">
                         <h4>Supply of ICT &amp; Office Equipments</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-                        <a className="service-btn" href="#"><i className="ti-arrow-right" /></a>
+                        <a className="service-btn" href=" "><i className="ti-arrow-right" /></a>
                       </div>
                     </div>
                   </div>
@@ -256,7 +256,7 @@ const Home = () => {
                       <div className="service-content">
                         <h4>Large scale networking infrastructure setup and maintenance</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-                        <a className="service-btn" href="#"><i className="ti-arrow-right" /></a>
+                        <a className="service-btn" href=" "><i className="ti-arrow-right" /></a>
                       </div>
                     </div>
                   </div>
@@ -272,7 +272,7 @@ const Home = () => {
                       <div className="service-content">
                         <h4>Consultancy on ICT infrastructure setup and development</h4>
                         <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>
-                        <a className="service-btn" href="#"><i className="ti-arrow-right" /></a>
+                        <a className="service-btn" href=" "><i className="ti-arrow-right" /></a>
                       </div>
                     </div>
                   </div>
@@ -354,7 +354,7 @@ const Home = () => {
                 <div className="col-md-4 col-sm-4 col-xs-12">
                   <div className="single-awesome-project">
                     <div className="awesome-img">
-                      <a href="#">
+                      <a href=" ">
                         <img src="img/background/about.jpg" alt="" />
                       </a>
                       <div className="add-actions text-center">
@@ -373,7 +373,7 @@ const Home = () => {
                   {/* single-awesome-project start */}
                   <div className="single-awesome-project">
                     <div className="awesome-img">
-                      <a href="#">
+                      <a href=" ">
                         <img src="img/background/about.jpg" alt="" />
                       </a>
                       <div className="add-actions text-center">
@@ -393,7 +393,7 @@ const Home = () => {
                   {/* single-awesome-project start */}
                   <div className="single-awesome-project">
                     <div className="awesome-img">
-                      <a href="#">
+                      <a href=" ">
                         <img src="img/background/about.jpg" alt="" />
                       </a>
                       <div className="add-actions text-center">
@@ -413,7 +413,7 @@ const Home = () => {
                   {/* single-awesome-project start */}
                   <div className="single-awesome-project">
                     <div className="awesome-img">
-                      <a href="#">
+                      <a href=" ">
                         <img src="img/background/about.jpg" alt="" />
                       </a>
                       <div className="add-actions text-center">
@@ -433,7 +433,7 @@ const Home = () => {
                   {/* single-awesome-project start */}
                   <div className="single-awesome-project">
                     <div className="awesome-img">
-                      <a href="#">
+                      <a href=" ">
                         <img src="img/background/about.jpg" alt="" />
                       </a>
                       <div className="add-actions text-center">
@@ -507,17 +507,17 @@ const Home = () => {
                               layouts, and in general the content of dummy text is nonsensical
                             </p>
                             <ul>
-                              <li><a href="#">Innovation
+                              <li><a href=" ">Innovation
                                   idea latest business
                                   tecnology</a></li>
-                              <li><a href="#">Digital
+                              <li><a href=" ">Digital
                                   content marketing
                                   online clients
                                   plateform</a></li>
-                              <li><a href="#">Safe secure
+                              <li><a href=" ">Safe secure
                                   services for you
                                   online email account</a></li>
-                              <li><a href="#">Innovation
+                              <li><a href=" ">Innovation
                                   idea latest business
                                   tecnology</a></li>
                             </ul>
@@ -544,17 +544,17 @@ const Home = () => {
                               to demonstrate the appearance of different typefaces and layouts
                             </p>
                             <ul>
-                              <li><a href="#">Innovation
+                              <li><a href=" ">Innovation
                                   idea latest business
                                   tecnology</a></li>
-                              <li><a href="#">Digital
+                              <li><a href=" ">Digital
                                   content marketing
                                   online clients
                                   plateform</a></li>
-                              <li><a href="#">Safe secure
+                              <li><a href=" ">Safe secure
                                   services for you
                                   online email account</a></li>
-                              <li><a href="#">Innovation
+                              <li><a href=" ">Innovation
                                   idea latest business
                                   tecnology</a></li>
                             </ul>
@@ -581,17 +581,17 @@ const Home = () => {
                               and in general the content of dummy text is nonsensical
                             </p>
                             <ul>
-                              <li><a href="#">Innovation
+                              <li><a href=" ">Innovation
                                   idea latest business
                                   tecnology</a></li>
-                              <li><a href="#">Digital
+                              <li><a href=" ">Digital
                                   content marketing
                                   online clients
                                   plateform</a></li>
-                              <li><a href="#">Safe secure
+                              <li><a href=" ">Safe secure
                                   services for you
                                   online email account</a></li>
-                              <li><a href="#">Innovation
+                              <li><a href=" ">Innovation
                                   idea latest business
                                   tecnology</a></li>
                             </ul>
@@ -618,17 +618,17 @@ const Home = () => {
                               layouts, and in general the content of dummy text is nonsensical.
                             </p>
                             <ul>
-                              <li><a href="#">Innovation
+                              <li><a href=" ">Innovation
                                   idea latest business
                                   tecnology</a></li>
-                              <li><a href="#">Digital
+                              <li><a href=" ">Digital
                                   content marketing
                                   online clients
                                   plateform</a></li>
-                              <li><a href="#">Safe secure
+                              <li><a href=" ">Safe secure
                                   services for you
                                   online email account</a></li>
-                              <li><a href="#">Innovation
+                              <li><a href=" ">Innovation
                                   idea latest business
                                   tecnology</a></li>
                             </ul>
@@ -662,7 +662,7 @@ const Home = () => {
                 <div className="col-md-4 col-sm-6 col-xs-12">
                   <div className="single-blog">
                     <div className="blog-image">
-                      <a className="image-scale" href="#">
+                      <a className="image-scale" href=" ">
                         <img src="img/background/blog.jpg" alt="" />
                       </a>
                     </div>
@@ -681,7 +681,7 @@ const Home = () => {
                           13
                         </span>
                       </div>
-                      <a href="#">
+                      <a href=" ">
                         <h4>Creative design clients response is better
                         </h4>
                       </a>
@@ -707,12 +707,12 @@ const Home = () => {
                           16
                         </span>
                       </div>
-                      <a href="#">
+                      <a href=" ">
                         <h4>Web development is a best work in future world</h4>
                       </a>
                     </div>
                     <div className="blog-image">
-                      <a className="image-scale" href="#">
+                      <a className="image-scale" href=" ">
                         <img src="img/background/blog.jpg" alt="" />
                       </a>
                     </div>
@@ -721,7 +721,7 @@ const Home = () => {
                 <div className="col-md-4 col-sm-6 col-xs-12">
                   <div className="single-blog">
                     <div className="blog-image">
-                      <a className="image-scale" href="#">
+                      <a className="image-scale" href=" ">
                         <img src="img/background/blog.jpg" alt="" />
                       </a>
                     </div>
@@ -740,7 +740,7 @@ const Home = () => {
                           07
                         </span>
                       </div>
-                      <a href="#">
+                      <a href=" ">
                         <h4>You can trust me and business with together
                         </h4>
                       </a>
@@ -765,13 +765,13 @@ const Home = () => {
                           32
                         </span>
                       </div>
-                      <a href="#">
+                      <a href=" ">
                         <h4>business man want to be benifit any way
                         </h4>
                       </a>
                     </div>
                     <div className="blog-image">
-                      <a className="image-scale" href="#">
+                      <a className="image-scale" href=" ">
                         <img src="img/background/blog.jpg" alt="" />
                       </a>
                     </div>
@@ -781,7 +781,7 @@ const Home = () => {
                 <div className="col-md-4 col-sm-6 col-xs-12">
                   <div className="single-blog">
                     <div className="blog-image">
-                      <a className="image-scale" href="#">
+                      <a className="image-scale" href=" ">
                         <img src="img/background/blog.jpg" alt="" />
                       </a>
                     </div>
@@ -800,7 +800,7 @@ const Home = () => {
                           32
                         </span>
                       </div>
-                      <a href="#">
+                      <a href=" ">
                         <h4>business man want to be benifit any way
                         </h4>
                       </a>
@@ -825,13 +825,13 @@ const Home = () => {
                           32
                         </span>
                       </div>
-                      <a href="#">
+                      <a href=" ">
                         <h4>business man want to be benifit any way
                         </h4>
                       </a>
                     </div>
                     <div className="blog-image">
-                      <a className="image-scale" href="#">
+                      <a className="image-scale" href=" ">
                         <img src="img/background/blog.jpg" alt="" />
                       </a>
                     </div>

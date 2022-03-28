@@ -22,32 +22,32 @@ const Header = () => {
               <Link className="item" to ="/">home <i className="fa fa-caret-right" /></Link>
                 <ul className="sub-menu ">
                   <div className="demo">
-                    <li className="menu-item "><a href="#">About Us</a></li>
-                    <li className="menu-item "><a href="#">Mission</a></li>
-                    <li className="menu-item "><a href="#">Vision</a></li>
+                    <li className="menu-item "><a href=" ">About Us</a></li>
+                    <li className="menu-item "><a href=" ">Mission</a></li>
+                    <li className="menu-item "><a href=" ">Vision</a></li>
                   </div>
                 </ul>
               </li>
-              <li className="menu-item"><a href="#">Product <i className="fa fa-caret-right" /></a>
+              <li className="menu-item"><a href=" ">Product <i className="fa fa-caret-right" /></a>
                 <ul className="sub-menu ">
-                  <li className="menu-item "><a href="#">Sample 1</a></li>
-                  <li className="menu-item "><a href="#">Sample 2</a></li>
-                  <li className="menu-item "><a href="#">Sample 3</a></li>
+                  <li className="menu-item "><a href=" ">Sample 1</a></li>
+                  <li className="menu-item "><a href=" ">Sample 2</a></li>
+                  <li className="menu-item "><a href=" ">Sample 3</a></li>
                 </ul>
               </li>
-              <li className="menu-item"><a href="#">Client <i className="fa fa-caret-right" /></a>
+              <li className="menu-item"><a href=" ">Client <i className="fa fa-caret-right" /></a>
                 <ul className="sub-menu ">
-                  <li className="menu-item "><a href="#">Sample 1</a></li>
-                  <li className="menu-item "><a href="#">Sample 2</a></li>
-                  <li className="menu-item "><a href="#">Sample 3</a></li>
-                  <li className="menu-item "><a href="#">Sample 4</a></li>
+                  <li className="menu-item "><a href=" ">Sample 1</a></li>
+                  <li className="menu-item "><a href=" ">Sample 2</a></li>
+                  <li className="menu-item "><a href=" ">Sample 3</a></li>
+                  <li className="menu-item "><a href=" ">Sample 4</a></li>
                 </ul>
               </li>
-              <li className="menu-item "><a href="#">Projects</a>
+              <li className="menu-item "><a href=" ">Projects</a>
                 <ul className="sub-menu ">
-                  <li className="menu-item "><a href="#">Sample 1</a></li>
-                  <li className="menu-item "><a href="#">Sample 2</a></li>
-                  <li className="menu-item "><a href="#">Sample 3</a></li>
+                  <li className="menu-item "><a href=" ">Sample 1</a></li>
+                  <li className="menu-item "><a href=" ">Sample 2</a></li>
+                  <li className="menu-item "><a href=" ">Sample 3</a></li>
                 </ul>
               </li>
               

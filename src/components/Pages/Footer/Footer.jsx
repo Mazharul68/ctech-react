@@ -12,7 +12,7 @@ const Footer = () => {
                   <div className="footer-content logo-footer">
                     <div className="footer-head">
                       <div className="footer-logo">
-                        <a href="#"><img style={{width: '60px', height: '60px'}} src="img/logo/01.png" alt="" /></a>
+                        <a href=" "><img style={{width: '60px', height: '60px'}} src="img/logo/01.png" alt="" /></a>
                       </div>
                       <p>
                         Are you looking for professional advice for your new business. Are you looking for professional advice for your new business. Are you looking for professional advice for your new business.
@@ -34,20 +34,20 @@ const Footer = () => {
                     <div className="footer-head">
                       <h4>Services Link</h4>
                       <ul className="footer-list">
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">Agency </a></li>
-                        <li><a href="#">Social media</a></li>
-                        <li><a href="#">Branding</a></li>
-                        <li><a href="#">Design </a></li>
-                        <li><a href="#">Data science </a></li>
+                        <li><a href=" ">Business</a></li>
+                        <li><a href=" ">Agency </a></li>
+                        <li><a href=" ">Social media</a></li>
+                        <li><a href=" ">Branding</a></li>
+                        <li><a href=" ">Design </a></li>
+                        <li><a href=" ">Data science </a></li>
                       </ul>
                       <ul className="footer-list hidden-sm">
-                        <li><a href="#">Search engine</a></li>
-                        <li><a href="#">Online support</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Pay per click</a></li>
-                        <li><a href="#">Event activation</a></li>
-                        <li><a href="#">Automotion</a></li>
+                        <li><a href=" ">Search engine</a></li>
+                        <li><a href=" ">Online support</a></li>
+                        <li><a href=" ">Development</a></li>
+                        <li><a href=" ">Pay per click</a></li>
+                        <li><a href=" ">Event activation</a></li>
+                        <li><a href=" ">Automotion</a></li>
                       </ul>
                     </div>
                   </div>
@@ -66,27 +66,27 @@ const Footer = () => {
                       <div className="footer-icons">
                         <ul>
                           <li>
-                            <a href="#">
+                            <a href=" ">
                               <i className="fa fa-facebook" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href=" ">
                               <i className="fa fa-twitter" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href=" ">
                               <i className="fa fa-google" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href=" ">
                               <i className="fa fa-pinterest" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href=" ">
                               <i className="fa fa-instagram" />
                             </a>
                           </li>
@@ -106,7 +106,7 @@ const Footer = () => {
                   <div className="copyright">
                     <p>
                       Copyright © 2022
-                      <a href="#">cTech</a> All Rights Reserved
+                      <a href=" ">cTech</a> All Rights Reserved
                     </p>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ const Footer = () => {
            {/* Footer Section End */}
            <div className="scrolling_top">
            <div className="top height">
-             <a href="#"><i className="fas fa-angle-double-up" /></a>
+             <a href=" "><i className="fas fa-angle-double-up" /></a>
            </div>
          </div>
         </div>
