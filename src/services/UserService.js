@@ -6,7 +6,7 @@ export const userService = {
 
 function getTeam() {
     const requestOptions = { method: 'GET'};
-    return fetch(BASE_URL + "/api/manage/team", requestOptions);
+    return fetch(BASE_URL + "/api/manage/team/", requestOptions);
 }
 
 

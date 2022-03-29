@@ -2,9 +2,9 @@ import React from 'react';
 const BASE_URL = process.env.REACT_APP_API_URL;
 const TeamMember = (props) => {
 
-  console.log(props);
-
   const { team_name, team_designation, icon1, icon2, icon3, team_img } = props.data;
+
+
   return (
     <div>
       <div className="col-md-3 col-sm-4 col-xs-12">
@@ -12,7 +12,7 @@ const TeamMember = (props) => {
           <div className="team-img">
             <a href="fdsfs">
               {/* <img src="img/team/system.png" alt="" /> */}
-              <img src={BASE_URL + `${team_img}`} alt="" />
+              <img src={BASE_URL + `/${team_img}`} alt="" />
             </a>
           </div>
           <div className="team-content text-center">
