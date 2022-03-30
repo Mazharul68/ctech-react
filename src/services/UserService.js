@@ -1,14 +1,17 @@
 const BASE_URL = process.env.REACT_APP_API_URL;
 export const userService = {
     getTeam,
-   
+    getSubMenu
 };
 
 function getTeam() {
     const requestOptions = { method: 'GET'};
-    return fetch(BASE_URL + "/api/manage/team/", requestOptions);
+    return fetch(BASE_URL + "/api/manage/team", requestOptions);
 }
-
+function getSubMenu() {
+    const requestOptions = { method: 'GET' };
+    return fetch(BASE_URL + "/api/sub-menu", requestOptions);
+}
 
 
 // function updateRole(id, roleData) {
