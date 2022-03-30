@@ -197,6 +197,7 @@
    .navbar ul.menu li.menu-item a.menu-link:hover{
      background: #1465ea;
      color: #fff;
+     
    }
   }
   @media screen and (max-width:767px){

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CustomLink from '../../CustomLink/CustomLink';
 import { userService } from '../../../services/UserService';
+import { Link } from 'react-router-dom';
 const BASE_URL = process.env.REACT_APP_API_URL;
 const Header = () => {
   const [homeSubMenu, setHomeSubMenu] = useState([]);
@@ -44,7 +45,7 @@ const Header = () => {
                   <div className="demo">
                   {
                     homeSubMenu.map(item =>{
-                      return  <li className="menu-item "><a href={item.sub_menu_link}>{item.sub_menu}</a></li>
+                      return  <li className="menu-item "><Link to={item.sub_menu_link}>{item.sub_menu}</Link></li>
                     })
                   }
                   </div>
@@ -54,7 +55,7 @@ const Header = () => {
                 <ul className="sub-menu ">
                   {
                     projectSubMenu.map(item => {
-                    return <li key={item.id} className="menu-item"><a target="blank" href={item.sub_menu_link}>{item.sub_menu}</a></li>
+                    return <li key={item.id} className="menu-item"><Link target="blank" to={item.sub_menu_link}>{item.sub_menu}</Link></li>
                   })
                   }
                 </ul>
@@ -64,7 +65,7 @@ const Header = () => {
                 {
                   clientSubMenu.map(item => {
                     return <li key={item.id} className="menu-item"><img src={BASE_URL + `/${item.logo_img}`} width="30px" alt="" />
-                    <a target="blank" href={item.sub_menu_link}>{item.sub_menu}</a></li>
+                    <Link target="blank" to={item.sub_menu_link}>{item.sub_menu}</Link></li>
                   })
                 }
                 </ul>
@@ -75,7 +76,7 @@ const Header = () => {
                   {
                     productSubMenu.map(item => {
                     return <li key={item.id} className="menu-item">
-                    <a target="blank" href={item.sub_menu_link}>{item.sub_menu}</a>
+                    <Link target="blank" to={item.sub_menu_link}>{item.sub_menu}</Link>
                     </li>
                   })
                 }

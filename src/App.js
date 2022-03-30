@@ -6,6 +6,10 @@ import Header from './components/Pages/Header/Header';
 import Team from './components/Pages/Team/Team';
 import Home from './components/Pages/Home/Home.jsx';
 import NotFound from './components/Pages/404NotFound/NotFound';
+import About from './components/Pages/SubMenuPage/Home/About/About';
+import Mission from './components/Pages/SubMenuPage/Home/Mission/Mission';
+import Vision from './components/Pages/SubMenuPage/Home/Vision/Vision';
+
 
 
 function App() {
@@ -16,6 +20,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />     
+          <Route path="/about" element={<About />} />     
+          <Route path="/mission" element={<Mission />} />     
+          <Route path="/vision" element={<Vision />} />     
           <Route path="*" element={<NotFound />} />     
       </Routes>
       <Footer />
