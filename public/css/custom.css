@@ -21,6 +21,8 @@
     display: inline-block;
     position: relative;
     padding: 1rem 0;
+    /* display: flex; */
+   
   }
 
   .navbar ul.menu li.menu-item a {
@@ -32,6 +34,8 @@
   }
   .navbar ul.menu li.menu-item a:hover{
     color: #3078fb;
+    
+ 
   }
   .navbar .menu li.menu-item.active a{
     color: #3078fb;
@@ -39,6 +43,7 @@
   .navbar .menu .sub-menu .menu-item{
     display: block;
     position: relative;
+    display: flex;
   }
   .navbar .menu .menu-item i{
     font-size: 19px;
@@ -202,5 +207,8 @@
     }
     .logo {
         top: 6px !important;
+    }
+    .margin{
+      margin-top: 2rem;
     }
   }
