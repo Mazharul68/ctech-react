@@ -25,77 +25,80 @@ const Header = () => {
 
         const product = result.filter(item => item.main_menu_id === 5)
         setProductSubMenu(product)
-
-        console.log(result)
+       
       })
   }, [])
   // console.log(productSubMenu)
 
   return (
-    <div>
-    <section className="navbar-section">
-          <div className="navbar">
-            <div className="logo">
-              <img width="70px" src="img/logo/01.png" alt="" />
-            </div>
-            <ul className="menu">
-              <li className="menu-item">
-              <CustomLink className="item" to ="/">home <i className="fa fa-caret-right" /></CustomLink>
-                <ul className="sub-menu ">
-                  <div className="demo">
-                  {
+    <header>
+    <nav class="menu_section">
+        <div class="header_logo">
+            <img class="img-fluid" width="60px" src="img/logo/01.png" alt="" />
+        </div>
+          <ul class="main_menu">
+            <li class="active">
+                <CustomLink className ="item" to={'/'}><i class="fa fa-caret-right"></i>home</CustomLink>
+                <ul class="dropdown_menu">
+                    <li>
+                    {
                     homeSubMenu.map(item =>{
-                      return  <li className="menu-item "><Link to={item.sub_menu_link}>{item.sub_menu}</Link></li>
+                      return <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
                     })
                   }
-                  </div>
-                </ul>
-              </li>
-              <li className="menu-item"><CustomLink to={'/product'}>Product <i className="fa fa-caret-right" /></CustomLink>
-                <ul className="sub-menu ">
-                  {
-                    projectSubMenu.map(item => {
-                    return <li key={item.id} className="menu-item"><Link target="blank" to={item.sub_menu_link}>{item.sub_menu}</Link></li>
-                  })
-                  }
-                </ul>
-              </li>
-              <li className="menu-item"><CustomLink to={'/client'}>Client <i className="fa fa-caret-right" /></CustomLink>
-                <ul className="sub-menu ">
-                {
-                  clientSubMenu.map(item => {
-                    return <li key={item.id} className="menu-item"><img src={BASE_URL + `/${item.logo_img}`} width="30px" alt="" />
-                    <Link target="blank" to={item.sub_menu_link}>{item.sub_menu}</Link></li>
-                  })
-                }
-                </ul>
-              </li>
-            <li className="menu-item "><CustomLink to={'/projects'}>Projects <i className="fa fa-caret-right" /></CustomLink>
-                <ul className="sub-menu ">
-               
-                  {
-                    productSubMenu.map(item => {
-                    return <li key={item.id} className="menu-item">
-                    <Link target="blank" to={item.sub_menu_link}>{item.sub_menu}</Link>
                     </li>
-                  })
-                }
                 </ul>
-              </li>
-              <li className="menu-item"><CustomLink className="item" to ="/team">Team </CustomLink></li>
-              <li className="menu-item"><CustomLink className="item" to ="/contact">Contact </CustomLink></li>
-              <li className="menu-item "><CustomLink className="item" to ="/webmail">Webmail </CustomLink></li>
-            </ul>
-            <div className="menu-btn">
-              <i className="fa fa-bars" />
-            </div>
-            {/*menu-btn*/}
-          </div>
-          {/*Navbar*/}
-          {/*Navbar-area*/}
-        </section>
-  
-    </div>
+            </li>
+            <li>
+            <CustomLink className ="item"  to="{{ $main->url_link }}"><i class="fa fa-caret-right"></i>Projects</CustomLink>
+            <ul class="dropdown_menu">
+                <li>
+                    {
+                      projectSubMenu.map(item =>{
+                      return <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
+                    })
+                  }
+                </li>
+              </ul>
+            </li>
+            <li>
+            <CustomLink className ="item"  to="{{ $main->url_link }}"><i class="fa fa-caret-right"></i>Clients</CustomLink>
+
+            <ul class="dropdown_menu">
+                <li>
+                    {
+                      clientSubMenu.map(item =>{
+                      return <Link className='d-inline-block sub-menu-item' to={item.sub_menu_link}><img src={BASE_URL + `/${item.logo_img}`}  width="30px" alt="" /> {item.sub_menu}</Link>
+                        
+
+                        
+                    })
+                  }
+                </li>
+              </ul>
+            </li>
+            <li>
+            <CustomLink className ="item"  to="{{ $main->url_link }}"><i class="fa fa-caret-right"></i>Product</CustomLink>
+            <ul class="dropdown_menu">
+                <li>
+                    {
+                      productSubMenu.map(item =>{
+                      return <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
+                    })
+                  }
+                </li>
+              </ul>
+            </li>
+            <li><CustomLink className ="item" to={'/team'}>Team</CustomLink></li>
+            <li><CustomLink className ="item" to={'/contact'}>Contact</CustomLink></li>
+            <li><a className="item" target="blank" href="https://login.bluehost.com/hosting/webmail">Webmail </a></li>
+         
+          </ul>
+        </nav>
+        <div class="menu-btn">
+         <i class="abc fa fa-bars"></i>
+     </div>
+  </header>
         );
 }
 
