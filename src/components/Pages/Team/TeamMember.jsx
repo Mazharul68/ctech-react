@@ -4,7 +4,6 @@ const TeamMember = (props) => {
 
   const { team_name, team_designation, icon1, icon2, icon3, team_img } = props.data;
 
-
   return (
     <div>
       <div className="col-md-3 col-sm-4 col-xs-12">

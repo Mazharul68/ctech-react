@@ -8,16 +8,16 @@ const Team = () => {
   const [team, setTeam] = useState([])
   const [loading, setLoading] = useState(false)
 
-  useEffect(() =>{
+  useEffect(() => {
     setLoading(true)
-    userService.getTeam().then(res =>res.json())
-    .then(data => {
-      setTeam(data.data)
-      setLoading(false)
-    })
-  },[])
-    return (
-        <div>
+    userService.getTeam().then(res => res.json())
+      .then(data => {
+        setTeam(data.data)
+        setLoading(false)
+      })
+  }, [])
+  return (
+    <div>
       {/* Start Bottom Header */}
       <div className="page-area">
         <div className="breadcumb-overlay" />
@@ -50,49 +50,49 @@ const Team = () => {
               </div>
             </div>
           </div>
-            <div>
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="common_area">
-                    <h1 className="heading_title text-uppercase">Management Team</h1>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="team-member">
-                  {
-                    loading ? <Spinner /> : <>
-                      {team.slice(0, 4).map(data => <TeamMember data={data} />)}
-                    </>
-                  }
+          <div>
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="common_area">
+                  <h1 className="heading_title text-uppercase">Management Team</h1>
                 </div>
               </div>
             </div>
-            <br />
-            <br />
-                <div>
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="common_area">
-                    <h1 className="heading_title text-uppercase">Technical Team</h1>
-                  </div>
+            <div className="row">
+              <div className="team-member">
+                {
+                  loading ? <Spinner /> : <>
+                    {team.slice(0, 4).map(data => <TeamMember data={data} />)}
+                  </>
+                }
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div>
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="common_area">
+                  <h1 className="heading_title text-uppercase">Technical Team</h1>
                 </div>
               </div>
-              <div className="row">
-                <div className="team-member">
-                  {
-                    loading ? <Spinner /> : <>
-                      {team.slice(4).map(data => <TeamMember data={data} />)}
-                    </>
-                  }
-                </div>
+            </div>
+            <div className="row">
+              <div className="team-member">
+                {
+                  loading ? <Spinner /> : <>
+                    {team.slice(4).map(data => <TeamMember data={data} />)}
+                  </>
+                }
               </div>
-                </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* End Team Area*/}
     </div>
-    );
+  );
 };
 
 export default Team;

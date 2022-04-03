@@ -25,81 +25,65 @@ const Header = () => {
 
         const product = result.filter(item => item.main_menu_id === 5)
         setProductSubMenu(product)
-       
+
       })
   }, [])
   // console.log(productSubMenu)
 
   return (
     <header>
-    <nav class="menu_section">
-        <div class="header_logo">
-            <img class="img-fluid" width="60px" src="img/logo/01.png" alt="" />
+      <nav className="menu_section">
+        <div className="header_logo">
+          <img className="img-fluid" width="60px" src="img/logo/01.png" alt="" />
+          {/* <img class="img-fluid" width="60px" src="img/logo/01.png" alt="" /> */}
         </div>
-          <ul class="main_menu">
-            <li class="active">
-                <CustomLink className ="item" to={'/'}><i class="fa fa-caret-right"></i>home</CustomLink>
-                <ul class="dropdown_menu">
-                    <li>
-                    {
-                    homeSubMenu.map(item =>{
-                      return <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
-                    })
-                  }
-                    </li>
+        <ul className="main_menu">
+          <li className="active"><Link to={'/'}>home <i className="fa fa-caret-right" /> </Link>
+            <ul className="dropdown_menu">
+              {
+                homeSubMenu.map(item => {
+                  return <li><Link to={item.sub_menu_link}>{item.sub_menu}</Link></li>
+                })
+              }
+            </ul>
+          </li>
+          <li><a href="#">Projects <i className="fa fa-caret-right" /></a>
+            <ul className="dropdown_menu">
+              <li><a href="#">sub sub menu <i className="fa fa-caret-right" /></a>
+                <ul className="dropdown_sub_menu">
+                  <li><a href="#">Demo 1</a></li>
+                  <li><a href="#">Demo 2</a></li>
                 </ul>
-            </li>
-            <li>
-            <CustomLink className ="item"  to="{{ $main->url_link }}"><i class="fa fa-caret-right"></i>Projects</CustomLink>
-            <ul class="dropdown_menu">
-                <li>
-                    {
-                      projectSubMenu.map(item =>{
-                      return <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
-                    })
-                  }
-                </li>
-              </ul>
-            </li>
-            <li>
-            <CustomLink className ="item"  to="{{ $main->url_link }}"><i class="fa fa-caret-right"></i>Clients</CustomLink>
-
-            <ul class="dropdown_menu">
-                <li>
-                    {
-                      clientSubMenu.map(item =>{
-                      return <Link className='d-inline-block sub-menu-item' to={item.sub_menu_link}><img src={BASE_URL + `/${item.logo_img}`}  width="30px" alt="" /> {item.sub_menu}</Link>
-                        
-
-                        
-                    })
-                  }
-                </li>
-              </ul>
-            </li>
-            <li>
-            <CustomLink className ="item"  to="{{ $main->url_link }}"><i class="fa fa-caret-right"></i>Product</CustomLink>
-            <ul class="dropdown_menu">
-                <li>
-                    {
-                      productSubMenu.map(item =>{
-                      return <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
-                    })
-                  }
-                </li>
-              </ul>
-            </li>
-            <li><CustomLink className ="item" to={'/team'}>Team</CustomLink></li>
-            <li><CustomLink className ="item" to={'/contact'}>Contact</CustomLink></li>
-            <li><a className="item" target="blank" href="https://login.bluehost.com/hosting/webmail">Webmail </a></li>
-         
-          </ul>
-        </nav>
-        <div class="menu-btn">
-         <i class="abc fa fa-bars"></i>
-     </div>
-  </header>
-        );
+              </li>
+              <li><a href="#">sub menu 3</a></li>
+              <li><a href="#">sub menu 4</a></li>
+            </ul>
+          </li>
+          <li><a href>Client <i className="fa fa-caret-right" /> </a>
+            <ul className="dropdown_menu">
+              <li><a href="#">sub menu 3</a></li>
+              <li><a href="#">sub menu 4</a></li>
+            </ul>
+          </li>
+          <li><a href>Product <i className="fa fa-caret-right" /> </a>
+            <ul className="dropdown_menu">
+              <li><a href="#">sub menu 3</a></li>
+              <li><a href="#">sub menu 4</a></li>
+            </ul>
+          </li>
+          <li><Link to="team">team</Link></li>
+          <li><Link to="contact">Contact</Link></li>
+          <li><a target="blank" href="https://login.bluehost.com/hosting/webmail">webmail</a></li>
+        </ul>
+        <div className="menu-btn">
+          <i className="abc fa fa-bars" />
+        </div>
+      </nav>
+    </header>
+  )
 }
 
 export default Header;
+
+
+// drop_menus
