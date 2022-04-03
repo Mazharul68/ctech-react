@@ -50,22 +50,44 @@ const Team = () => {
               </div>
             </div>
           </div>
-                <div className="row">
+            <div>
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="common_area">
+                    <h1 className="heading_title text-uppercase">Management Team</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="team-member">
+                  {
+                    loading ? <Spinner /> : <>
+                      {team.slice(0, 4).map(data => <TeamMember data={data} />)}
+                    </>
+                  }
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+                <div>
+              <div className="row">
                 <div className="col-lg-12">
                   <div className="common_area">
                     <h1 className="heading_title text-uppercase">Technical Team</h1>
                   </div>
                 </div>
               </div>
-           <div className="row">
-            <div className="team-member">
-            {
-              loading ? <Spinner /> : <>
-              {team.map(data => <TeamMember  data={data}/>)} 
-              </>
-            }
-            </div>
-          </div>
+              <div className="row">
+                <div className="team-member">
+                  {
+                    loading ? <Spinner /> : <>
+                      {team.slice(4).map(data => <TeamMember data={data} />)}
+                    </>
+                  }
+                </div>
+              </div>
+                </div>
         </div>
       </div>
       {/* End Team Area*/}
