@@ -1,7 +1,8 @@
 const BASE_URL = process.env.REACT_APP_API_URL;
 export const userService = {
     getTeam,
-    getSubMenu
+    getSubMenu,
+    getSubSubMenu
 };
 
 function getTeam() {
@@ -11,6 +12,10 @@ function getTeam() {
 function getSubMenu() {
     const requestOptions = { method: 'GET' };
     return fetch(BASE_URL + "/api/sub-menu", requestOptions);
+}
+function getSubSubMenu() {
+    const requestOptions = { method: 'GET' };
+    return fetch(BASE_URL + "/api/sub-sub-menu", requestOptions);
 }
 
 

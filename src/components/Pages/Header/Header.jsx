@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import CustomLink from '../../CustomLink/CustomLink';
 import { userService } from '../../../services/UserService';
 import { Link } from 'react-router-dom';
+import logo from '../../../img/logo.jpg';
 const BASE_URL = process.env.REACT_APP_API_URL;
 const Header = () => {
   const [homeSubMenu, setHomeSubMenu] = useState([]);
   const [projectSubMenu, setProjectSubMenu] = useState([]);
   const [clientSubMenu, setClientSubMenu] = useState([]);
   const [productSubMenu, setProductSubMenu] = useState([]);
+  const [subSubMenu, setSubSubMenu] = useState([]);
 
   useEffect(() => {
     userService.getSubMenu().then(res => res.json())
@@ -28,6 +30,11 @@ const Header = () => {
 
       })
   }, [])
+  useEffect(() => {
+    userService.getSubSubMenu().then(res => res.json())
+      .then(data => setSubSubMenu(data.data))
+  }, [])
+  console.log(subSubMenu);
   // console.log(productSubMenu)
 
   return (
@@ -48,27 +55,40 @@ const Header = () => {
             </ul>
           </li>
           <li><a href="#">Projects <i className="fa fa-caret-right" /></a>
-            <ul className="dropdown_menu">
-              <li><a href="#">sub sub menu <i className="fa fa-caret-right" /></a>
-                <ul className="dropdown_sub_menu">
-                  <li><a href="#">Demo 1</a></li>
+            <ul className="dropdown_menu" style={{ width: '400px' }}>
+              <li>
+                {
+                  projectSubMenu.map(item => {
+                    return <a href="#">{item.sub_menu}</a>
+                  })
+                }
+                <ul className="dropdown_sub_menu scollingSubmenu" >
+                  {
+                    subSubMenu.map(item => {
+                      return <li><a style={{ display: 'block' }} href="#"> <img style={{ marginRight: '10px' }} src={logo} width="30px" alt="" />{item.sub_sub_menu}</a></li>
+                    })
+                  }
                   <li><a href="#">Demo 2</a></li>
                 </ul>
               </li>
-              <li><a href="#">sub menu 3</a></li>
-              <li><a href="#">sub menu 4</a></li>
             </ul>
           </li>
           <li><a href>Client <i className="fa fa-caret-right" /> </a>
-            <ul className="dropdown_menu">
-              <li><a href="#">sub menu 3</a></li>
-              <li><a href="#">sub menu 4</a></li>
+            <ul className="dropdown_menu" style={{ width: '250px' }}>
+              {
+                clientSubMenu.map(item => {
+                  return <li><Link style={{ justifyContent: 'start' }} to={item.sub_menu_link}><img style={{ marginRight: '10px' }} src={BASE_URL + `/${item.logo_img}`} alt="" width="30px" /> {item.sub_menu}</Link></li>
+                })
+              }
             </ul>
           </li>
           <li><a href>Product <i className="fa fa-caret-right" /> </a>
-            <ul className="dropdown_menu">
-              <li><a href="#">sub menu 3</a></li>
-              <li><a href="#">sub menu 4</a></li>
+            <ul className="dropdown_menu" style={{ width: '400px' }}>
+              {
+                productSubMenu.map(item => {
+                  return <li><Link to={item.sub_menu_link}>{item.sub_menu}</Link></li>
+                })
+              }
             </ul>
           </li>
           <li><Link to="team">team</Link></li>

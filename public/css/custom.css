@@ -24,7 +24,7 @@
   color: #2d3436;
   text-transform: capitalize;
   display: inline-block;
-  font-size: 19px;
+  font-size: 17px;
   display: inline-flex;
   align-items: center ;
 }
@@ -80,6 +80,7 @@
   top: 100%;
 }
 
+
 .dropdown_sub_menu{
   position: absolute;
   width: 200px;
@@ -92,6 +93,15 @@
   left: 100%;
   width: 200px;
 } */
+.scollingSubmenu{
+  overflow-y: scroll;
+overflow-x: hidden;
+height: 450px;
+width: 300px;
+border-top: unset;
+border-top: 1px solid;
+
+}
 .main_menu > li:hover .dropdown_menu,
 .main_menu > li .dropdown_menu>li:hover .dropdown_sub_menu{
   opacity: 1;
