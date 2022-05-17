@@ -5,6 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
+// /* FontAwesome Icons */
+
+// import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+// /* Bootstrap 5.1  */
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
+
 ReactDOM.render(
   <BrowserRouter>
    <App />

@@ -58,6 +58,7 @@ const Header = () => {
             <ul className="dropdown_menu" style={{ width: '400px' }}>
               {
                 projectSubMenu.map(item => {
+                  // return <li> <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
                   return <li> <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
                     {
                       item.id === 20 && <ul className="dropdown_sub_menu scollingSubmenu" >
@@ -74,7 +75,7 @@ const Header = () => {
 
             </ul>
           </li>
-          <Outlet />
+          {/* <Outlet /> */}
           <li><a href>Client <i className="fa fa-caret-right" /> </a>
             <ul className="dropdown_menu" style={{ width: '250px' }}>
               {

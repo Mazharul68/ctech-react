@@ -1,34 +1,17 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
+import Banner from './Banner';
 
 const Nitor = () => {
+    const { id } = useParams();
     return (
         <>
-            {/* Start Bottom Header */}
-            <div className="page-area">
-                <div className="breadcumb-overlay" />
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 col-sm-12 col-xs-12">
-                            <div className="breadcrumb text-center d-block">
-                                <div className="section-headline white-headline text-center">
-                                    <h3>NITOR</h3>
-                                </div>
-                                <ul>
-                                    <li className="home-bread">Home</li>
-                                    <li>NITOR</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* END Header */}
-            {/*Start 50 Hospital Section Area*/}
+            <Banner id={id} />
             <div className="row pt-5 pb-5">
                 <div className="container">
                     <div className="col">
                         <div className="common_area">
-                            <h1 className="heading_title text-uppercase h2" style={{ color: 'rgb(48, 120, 251)' }}>NITOR</h1>
+                            <h1 className="heading_title text-uppercase h2" style={{ color: 'rgb(48, 120, 251)' }}>{id}</h1>
                         </div>
                         <p>National Institute Of Traumatology and Orthopaedic Rehabilitation (NITOR) is a tertiary level hospital with 1000
                             bed facilities. It is specially made for serving all the government employees. All the staffs are highly trained &amp;
@@ -57,7 +40,6 @@ const Nitor = () => {
                     </div>
                 </div>
             </div>
-            {/* End 50 Hospital Section Area*/}
         </>
     );
 };

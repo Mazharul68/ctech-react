@@ -26,13 +26,12 @@ function App() {
           <Route path="/about" element={<About />} />     
           <Route path="/mission" element={<Mission />} />     
           <Route path="/vision" element={<Vision />} />   
-          <Route path="/projects/NITOR" element={ <Nitor/>}>
-          {/* <Route path='/projects/NITOR' element={<Nitor/>}></Route> */}
+          <Route path="/:id" element={ <Projects/>}>
         </Route>
-          <Route path="/projects/SKH" element={ <SKH/>}>
-          {/* <Route path='/projects/SKH' element={<SKH/>}></Route> */}
-        </Route>
-          {/* <Route path="/project" element={<Nitor />} />      */}
+        {/* <Route path="/SKH" element={ <About/>}></Route> */}
+          {/* <Route path="/projects/:id" element={ <SKH/>}>
+          <Route path='/projects/SKH' element={<SKH/>}></Route>
+        </Route> */}
           <Route path="*" element={<NotFound />} />     
       </Routes>
       <Footer />
