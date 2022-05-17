@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CustomLink from '../../CustomLink/CustomLink';
 import { userService } from '../../../services/UserService';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import logo from '../../../img/logo.jpg';
 const BASE_URL = process.env.REACT_APP_API_URL;
 const Header = () => {
@@ -56,23 +56,25 @@ const Header = () => {
           </li>
           <li><a href="#">Projects <i className="fa fa-caret-right" /></a>
             <ul className="dropdown_menu" style={{ width: '400px' }}>
-              <li>
-                {
-                  projectSubMenu.map(item => {
-                    return <a href="#">{item.sub_menu}</a>
-                  })
-                }
-                <ul className="dropdown_sub_menu scollingSubmenu" >
-                  {
-                    subSubMenu.map(item => {
-                      return <li><a style={{ display: 'block' }} href="#"> <img style={{ marginRight: '10px' }} src={logo} width="30px" alt="" />{item.sub_sub_menu}</a></li>
-                    })
-                  }
-                  <li><a href="#">Demo 2</a></li>
-                </ul>
-              </li>
+              {
+                projectSubMenu.map(item => {
+                  return <li> <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
+                    {
+                      item.id === 20 && <ul className="dropdown_sub_menu scollingSubmenu" >
+                        {
+                          subSubMenu.map(item => {
+                            return <li><a style={{ display: 'block' }} href="#"> <img style={{ marginRight: '10px' }} src={logo} width="30px" alt="" />{item.sub_sub_menu}</a></li>
+                          })
+                        }
+                      </ul>
+                    }
+                  </li>
+                })
+              }
+
             </ul>
           </li>
+          <Outlet />
           <li><a href>Client <i className="fa fa-caret-right" /> </a>
             <ul className="dropdown_menu" style={{ width: '250px' }}>
               {
