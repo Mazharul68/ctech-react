@@ -9,9 +9,8 @@ import NotFound from './components/Pages/404NotFound/NotFound';
 import About from './components/Pages/SubMenuPage/Home/About/About';
 import Mission from './components/Pages/SubMenuPage/Home/Mission/Mission';
 import Vision from './components/Pages/SubMenuPage/Home/Vision/Vision';
-import Nitor from './components/Pages/SubMenu/Project/Nitor';
 import Projects from './components/Pages/SubMenu/Project/Projects';
-import SKH from './components/Pages/SubMenu/Project/SKH';
+import Client from './components/Pages/SubMenu/Client/Client';
 
 
 
@@ -27,6 +26,7 @@ function App() {
           <Route path="/mission" element={<Mission />} />     
           <Route path="/vision" element={<Vision />} />   
           <Route path="/:id" element={ <Projects/>}>
+          {/* <Route path="/:id" element={ <Client/>} /> */}
         </Route>
         {/* <Route path="/SKH" element={ <About/>}></Route> */}
           {/* <Route path="/projects/:id" element={ <SKH/>}>

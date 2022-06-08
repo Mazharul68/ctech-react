@@ -320,7 +320,7 @@ div#preloader {
 
 .section-headline h3 {
     font-size: 34px;
-    max-width: 500px;
+    max-width: 100%;
     line-height: 40px;
     margin: 0px auto 15px;
     font-weight: 500;
@@ -2597,7 +2597,7 @@ div#preloader {
 
 .breadcrumb h3 {
     color: #fff;
-    font-size: 42px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 50px;
     position: relative;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Banner from './Banner';
+import nitor from './../../../../img/50hospital/nitor.png'
 
 const Nitor = () => {
     const { id } = useParams();
@@ -20,9 +21,9 @@ const Nitor = () => {
                             effectively.</p>
                     </div>
                     <div className="row pt-5">
-                        <div className="col-lg-12">
+                        <div className="col-lg-12" style={{ marginBottom: '1rem' }}>
                             <figure className="figure">
-                                <img className="img-fluid" src="{{ asset('public/frontend') }}/img/50hospital/nitor.png" alt="" />
+                                <img className="img-fluid" src={nitor} alt="" />
                             </figure>
                         </div>
                         <div className="col">
