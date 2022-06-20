@@ -3,7 +3,8 @@ export const userService = {
     getTeam,
     getSubMenu,
     getSubSubMenu,
-    getSubSubEdit
+    getSubSubEdit,
+    getFiftyHospital
 };
 
 function getTeam() {
@@ -21,6 +22,10 @@ function getSubSubMenu() {
 function getSubSubEdit(id) {
     const requestOptions = { method: 'GET' };
     return fetch(BASE_URL + `/api/sub-menu/edit/${id}`, requestOptions);
+}
+function getFiftyHospital(id) {
+    const requestOptions = { method: 'GET' };
+    return fetch(BASE_URL + `/api/fifty-hospital/edit/${id}`, requestOptions);
 }
 
 

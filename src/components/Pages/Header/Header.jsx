@@ -33,7 +33,10 @@ const Header = () => {
   }, [])
   useEffect(() => {
     userService.getSubSubMenu().then(res => res.json())
-      .then(data => setSubSubMenu(data.data))
+      .then(data => {
+        const result = data.data;
+        setSubSubMenu(result)
+      })
   }, [])
 
   return (
@@ -59,12 +62,12 @@ const Header = () => {
                 projectSubMenu.map(item => {
                   // return <li> <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
                   return <li>
-                    <a href={`${item.id}`}>{item.sub_menu}</a>
+                    <Link to={`/projects/${item.id}`}>{item.sub_menu}</Link>
                     {
                       item.id === 20 && <ul className="dropdown_sub_menu scollingSubmenu" >
                         {
                           subSubMenu.map(item => {
-                            return <li><a style={{ display: 'block' }} href={`fifty-hospital/${item.sub_sub_menu_link}`}> <img style={{ marginRight: '10px' }} src={logo} width="30px" alt="" />{item.sub_sub_menu}</a></li>
+                            return <li><Link style={{ display: 'block' }} to={`/fifty-hospital/${item.id}`}> <img style={{ marginRight: '10px' }} src={logo} width="30px" alt="" />{item.sub_sub_menu}</Link></li>
                           })
                         }
                       </ul>

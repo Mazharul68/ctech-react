@@ -27,8 +27,8 @@ function App() {
           <Route path="/about" element={<About />} />     
           <Route path="/mission" element={<Mission />} />     
           <Route path="/vision" element={<Vision />} />   
-          <Route path="/:id" element={ <Projects/>}></Route>
-          <Route path="fifty-hospital/:id" element={ <FiftyHospital/>}></Route>
+          <Route path="/projects/:id" element={ <Projects/>}></Route>
+          <Route path="/fifty-hospital/:id" element={ <FiftyHospital/>}></Route>
           {/* <Route path="/projects/:id" element={ <Projects/>}>
              <Route index element={<Projects/>}></Route>
             <Route path='/projects/:id' element={<SKH/>}></Route>

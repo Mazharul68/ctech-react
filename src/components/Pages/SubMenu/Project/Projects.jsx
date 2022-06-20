@@ -11,23 +11,16 @@ import Sfmeh from './Sfmeh';
 import Mfstc from './Mfstc';
 import { useState } from 'react';
 import { userService } from '../../../../services/UserService';
-import { useQuery } from 'react-query';
 import ProjectDetails from './ProjectDetails';
 
 const Projects = () => {
     const { id } = useParams();
     const [subMenuDetails, setSubMenuDetails] = useState({});
 
-    // useEffect(() => {
-    //     userService.getSubSubEdit(id).then(res => res.json())
-    //         .then(data => console.log(data.data))
-    // }, [])
     useEffect(() => {
-        fetch(`http://127.0.0.1:8000/api/sub-menu/edit/${id}`)
-            .then(res => res.json())
+        userService.getSubSubEdit(id).then(res => res.json())
             .then(data => setSubMenuDetails(data))
-    }, [])
-    // const { data: data, isLoading, refetch } = useQuery('product', () => fetch(`http://127.0.0.1:8000/api/sub-menu/edit/${id}`).then(res => res.json()))
+    }, [id])
     return (
         <div>
             <ProjectDetails subMenuDetails={subMenuDetails} />
