@@ -3,16 +3,16 @@ import { useParams } from 'react-router-dom';
 import Banner from './Banner';
 import nitor from './../../../../img/50hospital/nitor.png'
 
-const Nitor = () => {
-    const { id } = useParams();
+const Nitor = ({ subMenuDetails }) => {
+    // const { id } = useParams();
     return (
         <>
-            <Banner id={id} />
+            <Banner id={subMenuDetails.sub_menu} />
             <div className="row pt-5 pb-5">
                 <div className="container">
                     <div className="col">
                         <div className="common_area">
-                            <h1 className="heading_title text-uppercase h2" style={{ color: 'rgb(48, 120, 251)' }}>{id}</h1>
+                            <h1 className="heading_title text-uppercase h2" style={{ color: 'rgb(48, 120, 251)' }}>{subMenuDetails.sub_menu}</h1>
                         </div>
                         <p>National Institute Of Traumatology and Orthopaedic Rehabilitation (NITOR) is a tertiary level hospital with 1000
                             bed facilities. It is specially made for serving all the government employees. All the staffs are highly trained &amp;

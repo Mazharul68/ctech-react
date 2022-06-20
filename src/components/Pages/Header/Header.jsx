@@ -22,6 +22,7 @@ const Header = () => {
         const project = result.filter(item => item.main_menu_id === 3)
         setProjectSubMenu(project)
 
+
         const client = result.filter(item => item.main_menu_id === 4)
         setClientSubMenu(client)
 
@@ -34,8 +35,6 @@ const Header = () => {
     userService.getSubSubMenu().then(res => res.json())
       .then(data => setSubSubMenu(data.data))
   }, [])
-  console.log(subSubMenu);
-  // console.log(productSubMenu)
 
   return (
     <header>
@@ -59,12 +58,13 @@ const Header = () => {
               {
                 projectSubMenu.map(item => {
                   // return <li> <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
-                  return <li> <Link to={item.sub_menu_link}>{item.sub_menu}</Link>
+                  return <li>
+                    <a href={`${item.id}`}>{item.sub_menu}</a>
                     {
                       item.id === 20 && <ul className="dropdown_sub_menu scollingSubmenu" >
                         {
                           subSubMenu.map(item => {
-                            return <li><a style={{ display: 'block' }} href="#"> <img style={{ marginRight: '10px' }} src={logo} width="30px" alt="" />{item.sub_sub_menu}</a></li>
+                            return <li><a style={{ display: 'block' }} href={`fifty-hospital/${item.sub_sub_menu_link}`}> <img style={{ marginRight: '10px' }} src={logo} width="30px" alt="" />{item.sub_sub_menu}</a></li>
                           })
                         }
                       </ul>
@@ -72,7 +72,6 @@ const Header = () => {
                   </li>
                 })
               }
-
             </ul>
           </li>
           {/* <Outlet /> */}

@@ -11,6 +11,8 @@ import Mission from './components/Pages/SubMenuPage/Home/Mission/Mission';
 import Vision from './components/Pages/SubMenuPage/Home/Vision/Vision';
 import Projects from './components/Pages/SubMenu/Project/Projects';
 import Client from './components/Pages/SubMenu/Client/Client';
+import SKH from './components/Pages/SubMenu/Project/SKH';
+import FiftyHospital from './components/Pages/SubMenu/FiftyHospital/FiftyHospital';
 
 
 
@@ -25,13 +27,13 @@ function App() {
           <Route path="/about" element={<About />} />     
           <Route path="/mission" element={<Mission />} />     
           <Route path="/vision" element={<Vision />} />   
-          <Route path="/:id" element={ <Projects/>}>
-          {/* <Route path="/:id" element={ <Client/>} /> */}
-        </Route>
-        {/* <Route path="/SKH" element={ <About/>}></Route> */}
-          {/* <Route path="/projects/:id" element={ <SKH/>}>
-          <Route path='/projects/SKH' element={<SKH/>}></Route>
+          <Route path="/:id" element={ <Projects/>}></Route>
+          <Route path="fifty-hospital/:id" element={ <FiftyHospital/>}></Route>
+          {/* <Route path="/projects/:id" element={ <Projects/>}>
+             <Route index element={<Projects/>}></Route>
+            <Route path='/projects/:id' element={<SKH/>}></Route>
         </Route> */}
+
           <Route path="*" element={<NotFound />} />     
       </Routes>
       <Footer />

@@ -8,7 +8,6 @@ import img4 from '../../../../img/project/img4.jpeg';
 
 const SKH = ({ id }) => {
     return (
-
         <>
             <Banner id={id} />
             <div className="row pt-5 pb-5">
@@ -19,28 +18,6 @@ const SKH = ({ id }) => {
                         </div>
                         <p className='text-danger'> No Found</p>
                     </div>
-                    {/* <div class="row pt-5 mt-5">
-                        <div class="col-lg-6 mb-5">
-                            <figure class="figure">
-                                <img class="img-fluid" style={{ width: '100%', height: '350px' }} src={img1} alt="" />
-                            </figure>
-                        </div>
-                        <div class="col-lg-6" style={{ marginTop: '5px' }}>
-                            <figure class="figure">
-                                <img class="img-fluid" style={{ width: '100%', height: '350px' }} src={img2} alt="" />
-                            </figure>
-                        </div>
-                        <div class="col-lg-6" style={{ marginTop: '20px' }}>
-                            <figure class="figure">
-                                <img class="img-fluid" style={{ width: '100%', height: '350px' }} src={img3} alt="" />
-                            </figure>
-                        </div>
-                        <div class="col-lg-6" style={{ marginTop: '20px' }}>
-                            <figure class="figure">
-                                <img class="img-fluid" style={{ width: '100%', height: '350px' }} src={img4} alt="" />
-                            </figure>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </>
