@@ -10,9 +10,8 @@ import About from './components/Pages/SubMenuPage/Home/About/About';
 import Mission from './components/Pages/SubMenuPage/Home/Mission/Mission';
 import Vision from './components/Pages/SubMenuPage/Home/Vision/Vision';
 import Projects from './components/Pages/SubMenu/Project/Projects';
-import Client from './components/Pages/SubMenu/Client/Client';
-import SKH from './components/Pages/SubMenu/Project/SKH';
 import FiftyHospital from './components/Pages/SubMenu/FiftyHospital/FiftyHospital';
+import TeamProfile from './components/Pages/Team/TeamProfile';
 
 
 
@@ -29,6 +28,7 @@ function App() {
           <Route path="/vision" element={<Vision />} />   
           <Route path="/projects/:id" element={ <Projects/>}></Route>
           <Route path="/fifty-hospital/:id" element={ <FiftyHospital/>}></Route>
+          <Route path="/teamProfile/:id" element={ <TeamProfile/>}></Route>
           {/* <Route path="/projects/:id" element={ <Projects/>}>
              <Route index element={<Projects/>}></Route>
             <Route path='/projects/:id' element={<SKH/>}></Route>

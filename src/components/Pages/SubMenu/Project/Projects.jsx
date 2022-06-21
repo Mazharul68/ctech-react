@@ -1,14 +1,5 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import Nitor from './Nitor';
-import SKH from './SKH';
-import Nicvd from './Nicvd';
-import Ssmc from './Ssmc';
-import Bsc from './Bsc';
-import Nikdu from './Nikdu';
-import GopalGonj from './GopalGonj';
-import Sfmeh from './Sfmeh';
-import Mfstc from './Mfstc';
 import { useState } from 'react';
 import { userService } from '../../../../services/UserService';
 import ProjectDetails from './ProjectDetails';

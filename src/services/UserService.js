@@ -4,12 +4,17 @@ export const userService = {
     getSubMenu,
     getSubSubMenu,
     getSubSubEdit,
-    getFiftyHospital
+    getFiftyHospital,
+    getTeamView,
 };
 
 function getTeam() {
     const requestOptions = { method: 'GET'};
     return fetch(BASE_URL + "/api/manage/team", requestOptions);
+}
+function getTeamView(id) {
+    const requestOptions = { method: 'GET'};
+    return fetch(BASE_URL + `/api/team/view/${id}`, requestOptions);
 }
 function getSubMenu() {
     const requestOptions = { method: 'GET' };

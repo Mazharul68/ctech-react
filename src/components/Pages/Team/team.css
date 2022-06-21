@@ -1,0 +1,78 @@
+.breadcrumb {
+	background-color: transparent;
+	margin-bottom: 0;
+	padding: 71px 0px 73px;
+}
+.team_area ul li{
+    display:inline-block;
+    padding: 1rem;
+    font-size: 15px
+}
+.team_area ul li a{
+    color: #fff
+}
+.team_details{
+    background: rgba(11, 11, 11, 0.7);
+    padding: 2rem 0;
+    margin-top: 2px;
+}
+.team_details .team_area{
+    width: 92%;
+    padding: 1rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding-bottom: 5rem;
+}
+.team_details .team_img{
+    text-align: center
+}
+.team_details .team_img img {
+	box-shadow: 9px 10px 7px 3px;
+}
+
+.team-content .team{
+  flex-basis: 60%;
+  margin: 0 auto;
+}
+.national-training-content .national-training-item{
+  flex-basis: 90%;
+  margin: 0 auto;
+}
+.team h2{
+  font-size: 31px;
+  color: #140193;
+}
+
+.team h4{
+  font-size: 20px;
+  color: #000;
+}
+
+.team span,
+.national-training-content .national-training-item span{
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #113715;
+}
+.team span i{
+  margin-right: 1rem;
+  color: #000;
+}
+.team .team-social li{
+  display: inline-block;
+  margin-right: 3rem;
+  padding: 1rem 0;
+}
+.team .team-social li a{
+    color: #007bff;
+    line-height: 1
+}
+.team p{
+	font-size: 17px;
+	line-height: 2;
+	text-align: justify;
+  margin: 0;
+}

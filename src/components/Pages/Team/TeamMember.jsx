@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const BASE_URL = process.env.REACT_APP_API_URL;
 const TeamMember = (props) => {
+  console.log(props);
 
-  const { team_name, team_designation, icon1, icon2, icon3, team_img } = props.data;
+  const { id, team_name, team_designation, icon1, icon2, icon3, team_img } = props.data;
 
   return (
     <div>
@@ -15,7 +17,7 @@ const TeamMember = (props) => {
             </a>
           </div>
           <div className="team-content text-center">
-            <h4><a href="fdf">{team_name}</a></h4>
+            <h4><Link to={`/teamProfile/${id}`}>{team_name}</Link></h4>
             <p>{team_designation}</p>
             <ul className="social-icon">
               <li><a className="facebook" href><i className={icon1} /></a></li>
