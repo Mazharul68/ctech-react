@@ -2,9 +2,9 @@ import React from 'react';
 import Iframe from 'react-iframe';
 
 const Contact = () => {
-    return (
-        <div>
-        {/* Start Bottom Header */}
+  return (
+    <div>
+      {/* Start Bottom Header */}
       <div className="page-area">
         <div className="breadcumb-overlay" />
         <div className="container">
@@ -60,7 +60,7 @@ const Contact = () => {
                     <i className="ti-location-pin" />
                     <p>
                       Location : House No: 142<br />
-                      <span>Castle Green (2nd Floor), Green Road, Dhaka</span>
+                      <span style={{ fontSize: '14px' }}>Castle Green(2nd Floor), Green Road, Dhaka</span>
                     </p>
                   </div>
                 </div>
@@ -70,14 +70,13 @@ const Contact = () => {
           <div className="row">
             <div className="col-md-6 col-sm-6 col-xs-12">
               {/* Start Map */}
-                <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9246461390176!2d90.38333291424364!3d23.7500663947076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bac7bf3511%3A0x3d4431af75170527!2sGreen%20Castle!5e0!3m2!1sen!2sbd!4v1642668154670!5m2!1sen!2sbd"
-                  width="100%"
-                  height="420px"
-                  id="myId"
-                  className="myClassname"
-                  display="initial"
-                  position="relative" />
-              {/* End Map */}
+              <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8274897616743!2d90.38596211429702!3d23.753530394575122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8a48c1f88e5%3A0x1a9a0959c5a76b71!2sCrystal%20Technology%20Bangladesh%20Ltd.!5e0!3m2!1sen!2sbd!4v1655708236667!5m2!1sen!2sbd"
+                width="100%"
+                height="420px"
+                id="myId"
+                className="myClassname"
+                display="initial"
+                position="relative" />
             </div>
             {/* Start Left contact */}
             <div className="col-md-6 col-sm-6 col-xs-12">
@@ -102,10 +101,10 @@ const Contact = () => {
                     </div>
                     <div className="col-md-12 col-sm-12 col-xs-12 text-center">
                       <button type="submit" id="submit" className="add-btn contact-btn">Send Message</button>
-                      <div id="msgSubmit" className="h3 text-center hidden" /> 
+                      <div id="msgSubmit" className="h3 text-center hidden" />
                       <div className="clearfix" />
-                    </div>   
-                  </form>  
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -114,8 +113,8 @@ const Contact = () => {
         </div>
       </div>
       {/* End Contact Area */}
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Contact;

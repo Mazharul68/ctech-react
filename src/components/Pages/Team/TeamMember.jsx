@@ -4,7 +4,7 @@ const BASE_URL = process.env.REACT_APP_API_URL;
 const TeamMember = (props) => {
   console.log(props);
 
-  const { id, team_name, team_designation, icon1, icon2, icon3, team_img } = props.data;
+  const { id, team_name, team_designation, icon1, icon2, icon3, team_img, url1, url2, url3 } = props.data;
 
   return (
     <div>
@@ -20,9 +20,9 @@ const TeamMember = (props) => {
             <h4><Link to={`/teamProfile/${id}`}>{team_name}</Link></h4>
             <p>{team_designation}</p>
             <ul className="social-icon">
-              <li><a className="facebook" href><i className={icon1} /></a></li>
-              <li><a className="twitter" href><i className={icon2} /></a></li>
-              <li><a className="instagram" href><i className={icon3} /></a></li>
+              <li><a target="_blank" className="facebook" href={url1} ><i className={icon1} /></a></li>
+              <li><a target="_blank" className="twitter" href={url2} ><i className={icon2} /></a></li>
+              <li><a target="_blank" className="instagram" href={url3}><i className={icon3} /></a></li>
             </ul>
           </div>
         </div>

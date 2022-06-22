@@ -82,7 +82,7 @@ const Header = () => {
             <ul className="dropdown_menu" style={{ width: '250px' }}>
               {
                 clientSubMenu.map(item => {
-                  return <li><Link style={{ justifyContent: 'start' }} to={item.sub_menu_link}><img style={{ marginRight: '10px' }} src={BASE_URL + `/${item.logo_img}`} alt="" width="30px" /> {item.sub_menu}</Link></li>
+                  return <li><Link style={{ justifyContent: 'start' }} to={`/client/${item.id}`}><img style={{ marginRight: '10px' }} src={BASE_URL + `/${item.logo_img}`} alt="" width="30px" /> {item.sub_menu}</Link></li>
                 })
               }
             </ul>
@@ -91,7 +91,7 @@ const Header = () => {
             <ul className="dropdown_menu" style={{ width: '400px' }}>
               {
                 productSubMenu.map(item => {
-                  return <li><Link to={item.sub_menu_link}>{item.sub_menu}</Link></li>
+                  return <li><Link to={`/product/${item.id}`}>{item.sub_menu}</Link></li>
                 })
               }
             </ul>

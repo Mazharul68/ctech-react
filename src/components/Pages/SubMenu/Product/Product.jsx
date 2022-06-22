@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { userService } from '../../../../services/UserService';
-import ClientDetails from './ClientDetails';
+import ProductDetails from './ProductDetails';
 
-const Client = () => {
+const Product = () => {
     const { id } = useParams();
-    const [subClientDetails, setSubClientDetails] = useState({});
+    const [subProduct, setSubProduct] = useState({});
     useEffect(() => {
         userService.getSubSubEdit(id).then(res => res.json())
-            .then(data => setSubClientDetails(data))
+            .then(data => setSubProduct(data))
     }, [id])
     return (
-        <div>
-            <ClientDetails subClientDetails={subClientDetails} />
-        </div>
+        <>
+            <ProductDetails subProduct={subProduct} />
+        </>
     );
 };
 
-export default Client;
+export default Product;
