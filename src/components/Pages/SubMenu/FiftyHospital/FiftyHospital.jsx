@@ -14,7 +14,7 @@ const FiftyHospital = () => {
 
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:8000/api/sub-sub-menu/edit/${id}`)
+        userService.getFiftyHospitalEdit(id)
             .then(res => res.json())
             .then(data => {
                 setSubSubMenu(data)
@@ -23,15 +23,15 @@ const FiftyHospital = () => {
 
 
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/fifty-hospital/manage')
+        userService.getFiftyHospitalManage()
             .then(res => res.json())
             .then(data => {
                 const result = data.data;
                 const fiftyHospitalDetails = result.filter(item => item.subsub_menu_id === parseInt(id))
-                setFiftyHospital(fiftyHospitalDetails)
+                window.scrollTo(0, 0);
+                setFiftyHospital(fiftyHospitalDetails);
             })
     }, [id])
-    console.log(fiftyHospital);
     return (
         <>
             <div className="page-area">

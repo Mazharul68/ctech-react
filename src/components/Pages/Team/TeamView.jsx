@@ -16,7 +16,7 @@ const TeamView = ({ teamView }) => {
                     </div>
                     <div className="col-lg-8">
                         <div className="team">
-                            <h2>{team_name}</h2>
+                            <h2 style={{ textTransform: 'uppercase' }}>{team_name}</h2>
                             <h4>{team_designation}</h4>
                             <span> <i className="fa fa-phone" aria-hidden="true"></i> {team_phone}</span>
                             <span> <i className="fa fa-envelope" aria-hidden="true"></i> {team_email}</span>

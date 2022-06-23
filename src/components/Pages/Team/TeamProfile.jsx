@@ -11,6 +11,7 @@ const TeamProfile = () => {
     useEffect(() => {
         userService.getTeamView(id).then(res => res.json())
             .then(data => setTeamView(data))
+        window.scrollTo(0, 0);
     }, [id])
     console.log(teamView);
     return (

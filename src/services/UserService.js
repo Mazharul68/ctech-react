@@ -6,6 +6,8 @@ export const userService = {
     getSubSubEdit,
     getFiftyHospital,
     getTeamView,
+    getFiftyHospitalEdit,
+    getFiftyHospitalManage,
 };
 
 function getTeam() {
@@ -32,20 +34,11 @@ function getFiftyHospital(id) {
     const requestOptions = { method: 'GET' };
     return fetch(BASE_URL + `/api/fifty-hospital/edit/${id}`, requestOptions);
 }
-
-
-// function updateRole(id, roleData) {
-//     const requestOptions = {
-//         method: 'PUT',
-//         body: JSON.stringify(roleData),
-//     };
-//     return fetch(BASE_URL + "/v1/api/roles/" + id, requestOptions);
-// }
-
-// function saveUser(userData) {
-//     const requestOptions = {
-//         method: 'POST',
-//         body: JSON.stringify(userData),
-//     };
-//     return fetch(BASE_URL + "/v1/api/users", requestOptions);
-// }
+function getFiftyHospitalEdit(id) {
+    const requestOptions = { method: 'GET' };
+    return fetch(BASE_URL + `/api/sub-sub-menu/edit/${id}`, requestOptions);
+}
+function getFiftyHospitalManage() {
+    const requestOptions = { method: 'GET' };
+    return fetch(BASE_URL + `/api/fifty-hospital/manage`, requestOptions);
+}
