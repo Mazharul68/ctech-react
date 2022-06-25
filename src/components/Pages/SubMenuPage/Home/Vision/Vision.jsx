@@ -1,8 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Vision = () => {
-    return (
-        <div>
+  return (
+    <>
+      <Helmet>
+        <title>Vision</title>
+      </Helmet>
+      <div>
         {/* Start Bottom Header */}
         <div className="page-area">
           <div className="breadcumb-overlay" />
@@ -32,10 +37,10 @@ const Vision = () => {
                 <div className="common_area">
                   <h1 className="heading_title text-uppercase">Vision</h1>
                 </div>
-                <p className="lead">We promised to create a dynamic platform for 
-                  the universal coverage of ICT in locally and 
-                  internationally through modern technology, 
-                  capacity building activities &amp; awareness raising 
+                <p className="lead">We promised to create a dynamic platform for
+                  the universal coverage of ICT in locally and
+                  internationally through modern technology,
+                  capacity building activities &amp; awareness raising
                   programs</p>
               </div>
             </div>
@@ -44,7 +49,8 @@ const Vision = () => {
         </div>
         {/* End Team Area*/}
       </div>
-    );
+    </>
+  );
 };
 
 export default Vision;

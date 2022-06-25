@@ -107,7 +107,7 @@ const Footer = () => {
                 <div className="copyright">
                   <p>
                     Copyright © 2022
-                    <a href=" ">cTech</a> All Rights Reserved
+                    <a href="https://www.ctechbd.com/">cTech</a> All Rights Reserved
                   </p>
                 </div>
               </div>
@@ -125,7 +125,6 @@ const Footer = () => {
         </div>
       </div>
     </div>
-
   );
 };
 

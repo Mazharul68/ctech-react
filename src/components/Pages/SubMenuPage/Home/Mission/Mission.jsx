@@ -1,8 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Mission = () => {
-    return (
-        <div>
+  return (
+    <>
+      <Helmet>
+        <title>Mission</title>
+      </Helmet>
+      <div>
         {/* Start Bottom Header */}
         <div className="page-area">
           <div className="breadcumb-overlay" />
@@ -32,7 +37,7 @@ const Mission = () => {
                 <div className="common_area">
                   <h1 className="heading_title text-uppercase">Mission</h1>
                 </div>
-                <p className="lead">Maximize the coverage of ICT globally by 
+                <p className="lead">Maximize the coverage of ICT globally by
                   providing</p>
                 <ul className="mission-item">
                   <li><i className="fa fa-circle" /> Competitive price</li>
@@ -47,7 +52,8 @@ const Mission = () => {
         </div>
         {/* End Team Area*/}
       </div>
-    );
+    </>
+  );
 };
 
 export default Mission;

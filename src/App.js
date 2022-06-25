@@ -34,8 +34,7 @@ function App() {
           <Route path="*" element={<NotFound />} />     
       </Routes>
       <Footer />
-</div>
+    </div>
   );
 }
-
 export default App;

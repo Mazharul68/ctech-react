@@ -6,12 +6,21 @@
   flex-direction: row;
   background: #fff;
   align-items: center;
+  box-shadow: 1px 1px 4px 0px #0c0b0b;
+}
+.fixed .menu_section {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #fff;
+	z-index: 999;
+	margin: 0 auto;
 }
 .main_menu > li{
   display: inline-block;
   position: relative;
   color: #444;
-  
 }
 .dropdown_menu > li{
   position: relative;

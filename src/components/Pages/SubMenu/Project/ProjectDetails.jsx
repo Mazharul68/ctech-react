@@ -5,12 +5,16 @@ import img1 from '../../../../img/project/img1.jpeg';
 import img2 from '../../../../img/project/img2.jpeg';
 import img3 from '../../../../img/project/img3.jpeg';
 import img4 from '../../../../img/project/img4.jpeg';
+import { Helmet } from 'react-helmet';
 
 const ProjectDetails = ({ subMenuDetails }) => {
 
     const { sub_menu, id } = subMenuDetails;
     return (
         <>
+            <Helmet>
+                <title>{sub_menu}</title>
+            </Helmet>
             <Banner id={sub_menu} />
             <div className="row pt-5 pb-5">
                 <div className="container">
