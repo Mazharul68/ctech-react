@@ -15,8 +15,6 @@ import TeamProfile from './components/Pages/Team/TeamProfile';
 import Client from './components/Pages/SubMenu/Client/Client';
 import Product from './components/Pages/SubMenu/Product/Product';
 
-
-
 function App() {
   return (
     <div className="App">
