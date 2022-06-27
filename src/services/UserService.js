@@ -8,6 +8,7 @@ export const userService = {
     getTeamView,
     getFiftyHospitalEdit,
     getFiftyHospitalManage,
+    getUserMessage,
 };
 
 function getTeam() {
@@ -41,4 +42,15 @@ function getFiftyHospitalEdit(id) {
 function getFiftyHospitalManage() {
     const requestOptions = { method: 'GET' };
     return fetch(BASE_URL + `/api/fifty-hospital/manage`, requestOptions);
+}
+///// User Message
+
+function getUserMessage (data){
+    return fetch (BASE_URL + `/api/user/message/`,{
+        method:'POST',
+        headers:{
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    });
 }
